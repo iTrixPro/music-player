@@ -1,17 +1,10 @@
+/* general */
 .song {
   display: flex;
   padding-left: var(--size);
   justify-content: space-evenly;
   color: var(--on-text);
   margin-top: 5px;
-}
-
-.song:hover {
-  background-color: var(--on-black);
-}
-
-.song:hover  fa-icon {
-  display: flex;
 }
 
 .song img {
@@ -24,10 +17,6 @@
   font-size: 30px;
 }
 
-fa-icon:hover {
-  color: var(--primary);
-}
-
 .song .text-area {
   display: flex;
   justify-content: space-between;
@@ -35,4 +24,17 @@ fa-icon:hover {
   width: 85%;
   font-family: "GothamBook";
   font-size: 12px;
+}
+
+/* user hover the song */
+.song:hover {
+  background-color: var(--on-black);
+}
+
+.song:hover  fa-icon {
+  display: flex;
+}
+
+fa-icon:hover {
+  color: var(--primary);
 }

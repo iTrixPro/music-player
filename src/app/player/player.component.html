@@ -1,0 +1,25 @@
+<nav class="player">
+  <div class="container">
+    <div class="block">
+      <div class="music" *ngIf="classRef.is_playing">
+        <img src={{classRef.url}}>
+        <div class="description" style="color: white">
+          <p class="title"> {{classRef.title}}</p>
+          <p class="artist"> {{classRef.artist}} </p>
+        </div>
+      </div>
+    </div>
+
+    <div class="block">
+      <audio src={{classRef.src}}></audio>
+      <div class="buttons">
+        <fa-icon class="previous" [icon]="previousIcon"></fa-icon>
+        <div class="play-button">
+          <fa-icon [icon]="playIcon"></fa-icon>
+        </div>
+        <fa-icon class="next" [icon]="nextIcon"></fa-icon>
+      </div>
+
+    </div>
+  </div>
+</nav>

@@ -4,6 +4,7 @@ import { NgModule } from '@angular/core';
 import { AppComponent } from './app.component';
 import { SongsComponent } from './songs/songs.component';
 import { SideBarComponent } from './side-bar/side-bar.component';
+import { PlayerComponent } from './player/player.component';
 
 // externs modules
 import { BrowserModule } from '@angular/platform-browser';
@@ -12,19 +13,21 @@ import { FontAwesomeModule } from '@fortawesome/angular-fontawesome';
 
 // our services
 import { SongsService } from './songs/songs.service';
+import { PlayerService } from './player/player.service';
 
 @NgModule({
   declarations: [
     AppComponent,
     SongsComponent,
-    SideBarComponent
+    SideBarComponent,
+    PlayerComponent
   ],
   imports: [
     BrowserModule,
     HttpClientModule,
     FontAwesomeModule,
   ],
-  providers: [SongsService],
+  providers: [SongsService, PlayerService],
   bootstrap: [AppComponent]
 })
 export class AppModule { }
