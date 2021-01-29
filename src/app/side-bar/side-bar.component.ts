@@ -1,6 +1,6 @@
 import { Component, OnInit } from '@angular/core';
 
-// icons for side bar
+// import icons for side bar
 import { faHome } from '@fortawesome/free-solid-svg-icons';
 
 @Component({
