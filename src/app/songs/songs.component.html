@@ -1,0 +1,11 @@
+<div *ngFor="let song of songs">
+  <div class="song">
+    <img src={{song.sleeve}}>
+    <fa-icon [icon]="playIcon"></fa-icon>
+    <div class="text-area">
+      <h3>
+        {{song.artist}} - {{song.title}}
+      </h3>
+    </div>
+  </div>
+</div>

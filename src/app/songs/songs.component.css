@@ -1,0 +1,38 @@
+.song {
+  display: flex;
+  padding-left: var(--size);
+  justify-content: space-evenly;
+  color: var(--on-text);
+  margin-top: 5px;
+}
+
+.song:hover {
+  background-color: var(--on-black);
+}
+
+.song:hover  fa-icon {
+  display: flex;
+}
+
+.song img {
+  width: 40px;
+}
+
+.song fa-icon {
+  display: none;
+  align-items: center;
+  font-size: 30px;
+}
+
+fa-icon:hover {
+  color: var(--primary);
+}
+
+.song .text-area {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  width: 85%;
+  font-family: "GothamBook";
+  font-size: 12px;
+}
