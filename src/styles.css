@@ -1,0 +1,11 @@
+:root {
+  --primary: #ffff00;
+  --on-text: #ffffff;
+  --background: #282828;
+  --on-black: #232323;
+  --black: #000000;
+}
+
+body {
+  background-color: var(--background);
+}
