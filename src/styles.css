@@ -1,3 +1,21 @@
+/* reset margin & padding */
+* {
+  margin: 0;
+  padding: 0;
+}
+
+/* import fonts */
+@font-face {
+  font-family: "GothamBold";
+  src: url('app/fonts/GothamBold.ttf');
+}
+
+@font-face {
+  font-family: "GothamBook";
+  src: url('app/fonts/GothamBook.ttf')
+}
+
+/* init colors */
 :root {
   --primary: #ffff00;
   --on-text: #ffffff;
@@ -6,6 +24,12 @@
   --black: #000000;
 }
 
+/* size of navbar */
+:root {
+  --size: 230px;
+}
+
+/* define background */
 body {
   background-color: var(--background);
 }
